@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+.App-loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.profileImage{
+  width: 64px;
+  height: 64px;
+}

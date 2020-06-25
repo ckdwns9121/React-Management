@@ -16,6 +16,7 @@ const styles = theme => ({
 })
 
 class CustomerAdd extends Component {
+    //고객추가 클래스의 생성자
     constructor(props) {
         super(props);
         this.state = {
@@ -28,6 +29,7 @@ class CustomerAdd extends Component {
             open: false
         }
     }
+
     handleFormSubmit = (e) => {
         e.preventDefault()
         this.addCustomer()
@@ -61,10 +63,6 @@ class CustomerAdd extends Component {
         const url = '/api/customers';
         const formData = new FormData();
         console.log("파일"+this.state.file);
-        if(this.state.file ==null){
-            alert("프로필 사진을 업로드 해주세요");
-            return;
-        }
         formData.append('image', this.state.file);
         formData.append('name', this.state.userName);
         formData.append('birthday', this.state.birthday);
@@ -124,16 +122,6 @@ class CustomerAdd extends Component {
                 </Dialog>
             </div>
 
-            /*
-            <form onSubmit={this.handleFormSubmit}>
-                <h1>고객추가</h1>
-                프로필 이미지: <input type ="file" name ="file" file ={this.state.file} value ={this.state.fileName} onChange ={this.handleFileChange}></input> <br></br>
-                이름 :<input type ="text" name="userName" value={this.state.userName} onChange ={this.handleValueChange}></input><br></br>
-                생년월일:<input type ="text" name="birthday" value={this.state.birthday} onChange ={this.handleValueChange}></input><br></br>
-                성별:<input type ="text" name="gender" value={this.state.gender} onChange ={this.handleValueChange}></input><br></br>
-                직업:<input type ="text" name="job" value={this.state.job} onChange ={this.handleValueChange}></input><br></br>
-                <button type ="submit">추가하기</button>
-            </form>*/
         )
     }
 }

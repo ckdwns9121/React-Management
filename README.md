@@ -53,6 +53,9 @@
   $yarn dev
   ```
 
+
+### Screen Shots
+<p align="center"><img src="https://user-images.githubusercontent.com/40492343/88377368-0180bc00-cdda-11ea-861d-caed9f0bf038.PNG" width="1920px" height="1080px"></img></p>
+
 #### 스크린샷
 
-![캡처](https://user-images.githubusercontent.com/40492343/88377368-0180bc00-cdda-11ea-861d-caed9f0bf038.PNG)

@@ -57,5 +57,3 @@
 ### Screen Shots
 <p align="center"><img src="https://user-images.githubusercontent.com/40492343/88377368-0180bc00-cdda-11ea-861d-caed9f0bf038.PNG" width="800px" height="300px"></img></p>
 
-#### 스크린샷
-
